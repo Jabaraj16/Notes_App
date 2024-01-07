@@ -5,14 +5,12 @@ import Col from 'react-bootstrap/Col';
 import EditNote from './EditNote';
 import { getNoteAPI, removeANoteAPI } from '../Services/allAPI';
 
-function Notes(noteResponse) {
+function Notes({noteResponse}) {
     const [allNotes,setAllNotes]=useState([])
 
     useEffect(()=>{
         getAllNotes()
-        removeNote()
-    const [allNotes,setAllNotes]=useState([])
-    },[noteResponse,allNotes])
+    },[noteResponse])
     const getAllNotes=async()=>{
         const result=await getNoteAPI()
         if(result.status===200){

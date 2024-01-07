@@ -11,7 +11,8 @@ function Notes(noteResponse) {
     useEffect(()=>{
         getAllNotes()
         removeNote()
-    },[noteResponse])
+    const [allNotes,setAllNotes]=useState([])
+    },[noteResponse,allNotes])
     const getAllNotes=async()=>{
         const result=await getNoteAPI()
         if(result.status===200){

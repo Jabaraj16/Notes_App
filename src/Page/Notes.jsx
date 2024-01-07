@@ -10,6 +10,7 @@ function Notes(noteResponse) {
 
     useEffect(()=>{
         getAllNotes()
+        removeNote()
     },[noteResponse])
     const getAllNotes=async()=>{
         const result=await getNoteAPI()

@@ -38,7 +38,7 @@ const [show, setShow] = useState(false);
   console.log(addNotes);
 
   return (
-    <div style={{width:'600px',height:'100vh'}} className='border shadow rounded'>
+    <div style={{width:'600px',height:'100%'}} className='border shadow rounded'>
         <div  className=' p-2 m-2 d-flex justify-content-between'>
             <button className='btn btn-info rounded-3 border w-100'><h5 className='mt-2 fw-bolder'>NOTE'S </h5></button>
             <button onClick={handleShow} className='btn  '><img  width={'30px'} src="https://cdn-icons-png.flaticon.com/512/1004/1004733.png" alt="" /></button>

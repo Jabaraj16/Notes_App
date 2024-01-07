@@ -29,12 +29,12 @@ function Notes(noteResponse) {
 
     }
     return (
-        <div style={{height:'100vh'}} className='container mt-4'>
+        <div  className='container mt-4 pe-4'>
             <Row className='ps-3'>
                 {
                     allNotes?.length>0?allNotes.map(notes=>(
                         <Col sm={12} md={6} xl={12} className=''>
-                    <Card  className='mb-4 w-100 shadow '>
+                    <Card className='mb-4 w-100 shadow '>
                         <Card.Body>
                             <div className='d-flex justify-content-between'>
                                 <Card.Title className='mt-2 ms-2 text-primary w-100 text-wrap fs-3'>{notes.title}</Card.Title>
@@ -52,7 +52,7 @@ function Notes(noteResponse) {
                     </Card>
                 </Col>
                     )):<div style={{height:'100vh'}} className='text-center'>
-                        <img src="https://media.tenor.com/8QBZ9ZJDKywAAAAe/no-content.png" alt="" />
+                        <img width={'100%'}  src="https://media.tenor.com/8QBZ9ZJDKywAAAAe/no-content.png" alt="" />
                     </div>
                 }
             </Row>

@@ -78,7 +78,7 @@ const [show, setShow] = useState(false);
       </Modal>
         </div>
 
-        <Notes noteResponse={noteResponse}/>
+        <Notes noteResponse={noteResponse} setAddNotes={setAddNotes}/>
     </div>
   )
 }
